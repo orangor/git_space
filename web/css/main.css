@@ -51,7 +51,7 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
     padding: 0;
     font-family: Microsoft YaHei;
 }
-
+/*
  body{
      
     min-height: 100%;
@@ -60,7 +60,7 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
     overflow-x: hidden;
     box-sizing: border-box;
 }
- 
+ */
 a{text-decoration:none}
 *{box-sizing: border-box;transition: all .25s ease;color: #fff;}
 
@@ -68,11 +68,12 @@ a{text-decoration:none}
     width:100% ;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .bannerpng{
     position: absolute;
-    width: 982px;
+    width: 50%;
     height: 342px;
     left: 469px;
     top: 200px;

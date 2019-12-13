@@ -26,7 +26,7 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
 .to_top:hover{
     background: url(../images/to_top2.png);
 }
-.video{height: 660px;width: 1920px;overflow: hidden;position: relative;}
+.video{height: 660px;width: 100%;overflow: hidden;position: relative;}
 
 .top{
   
