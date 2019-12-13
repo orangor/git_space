@@ -1,0 +1,45 @@
+
+.aboutus_page .top{height: 380px;background-image: url(../images/aboutus_bg.jpg);}
+.aboutus_box{overflow: hidden;
+    width: 1160px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+    box-shadow: 0 0 30px rgba(0,0,0,.05);
+    padding: 80px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    
+}
+li{  list-style-type: none;}
+.aboutus_box a{cursor: pointer;}
+.aboutus_page .aboutus_box:after{content: "";display: none;}
+.aboutus_box .list_box{width: 100%;text-align: center;border-bottom: 4px solid #eee;padding-bottom: 10px;}
+.aboutus_box .list_box li{display: inline-block;margin: 0 20px;  list-style-type: none;}
+.aboutus_box .list_box li a{display: block;color: #333;font-size: 16px;}
+.aboutus_box .list_box li.current a,.aboutus_box .list_box li:hover a{color: #1693d4;}
+/*.aboutus_box .list_box li.current:after{content: "";display: block;position: relative;width: 100%;height: 4px;background: #1693d4;top: 14px;transition: all .35s ease;}
+*/
+.aboutus_box .list_tab{min-height: 500px;}
+.aboutus_box .list_tab .list_item{ position: relative; text-align: center;padding-top: 60px;}
+.aboutus_box .list_tab .list_item img{position: relative; margin-bottom:50px; }
+.aboutus_box .list_tab .list_item p{font-size: 14px;color: #666;line-height: 40px;text-align: left;text-align: justify;}
+
+
+/*招聘样式*/
+.zplb {display: block;width: 200px;min-height: 500px;float: left;}
+.zpnr {display: block;float: right;width: 750px;min-height: 500px;margin-left: 50px;background: #f4f8ff;text-align: center;padding:40px 50px;letter-spacing: 0.5px;}
+.zplb a{color: #333;font-size: 14px;text-indent: 20px;text-align: left;line-height: 50px;height: 50px;display:block;width: 200px;background: rgba(0,0,0,0);box-shadow: 0,0,0,rgba(0,0,0,0);}
+.zplb li{margin-bottom: 10px;}
+.zplb li:hover a {box-shadow: 0 10px 30px rgba(64,78,102,.15);background:#39a3da;color: #fff;}
+.zplb li.current a{background:#39a3da;color: #fff;}
+
+.zpnr li{display: block;    margin-bottom: 40px;}
+.zpnr li.position_title{height: 20px;}
+.position_title h6{color: #333;font-size: 18px;display: block;float: left;text-indent: 26px;background: url(../images/position_icon.png) no-repeat left center;}
+.position_title span{color: #999;display: block;float: left;margin-left: 30px;}
+.zpnr li.dute h6,.zpnr li.qua h6{color: #666;text-align: left;font-size: 14px;font-weight: bold;text-indent: 26px;background: url(../images/dute_icon.png) no-repeat left 0;margin-bottom: 20px;}
+.zpnr li.qua h6{background: url(../images/qua_icon.png) no-repeat left 0;}
+.aboutus_box .zpnr .list_item{padding-top: 10px;}
+.zpnr li p{text-align:justify; font-size: 14px;}

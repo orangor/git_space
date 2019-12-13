@@ -1,0 +1,173 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei;
+}
+.circle{
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    float:left;
+    position: relative;
+    top:22px;
+    left: 25px;
+}
+
+.to_top {
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+    z-index: 9999;
+    background:url(../images/to_top1.png);
+}
+.to_top:hover{
+    background: url(../images/to_top2.png);
+}
+.video{height: 660px;width: 1920px;overflow: hidden;position: relative;}
+
+.top{
+  
+    position: absolute;
+    width: 1920px;
+    height: 80px;
+    display: block;
+    top: 0px;
+}
+
+.top .top_bg{
+    background:url(../images/top_bg.png) repeat-x;
+    width: 1920px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: all 3s ease;
+    
+}
+
+.top .logo{
+    position: relative;
+    float: left;
+    top: 17px;
+    left:  250px;
+}
+
+.top .nav{
+    position: relative;
+    left: 680px;
+}
+
+.top .nav li {
+    position: absolute;
+    list-style: none;
+    width: 120px;
+    display: block; 
+    float: left;
+    line-height: 80px;
+    background: #1693d4; 
+}
+.top .nav li:nth-child(1){ left: 0px;   }
+.top .nav li:nth-child(2){ left: 120px; }
+.top .nav li:nth-child(3){ left: 240px;}
+.top .nav li:nth-child(4){ left: 360px; }
+.top .nav li:nth-child(5){ left: 480px; }
+.top .nav li a{
+    position: absolute;
+    text-decoration:none;
+    font-size:20px;  font-family: Microsoft YaHei;text-align: center;
+    color: white;
+}
+.top .nav li a:after{content: normal;transition: all .35s ease;}
+.top .nav  li a:hover:after, .top .nav li a.cur:after{content: "";display: block;opacity:0.8;width: 100%;height: 4px;background: #fff;position: absolute;top: 70px;left: 0;cursor: pointer;}
+.top .nav li a:hover:after{opacity: 0.2;}
+.top .tele{
+    position: absolute;
+    top: 25px;  
+    right: 250px;
+}
+
+
+.topic_text{
+    width: 200px;
+    opacity: 1;
+    background: #0f1c35;
+    
+}
+.topic_text ul li{
+    color: #f4f8ff;
+    list-style-type: none;
+    height: 44px;
+    font-size: 18px;
+    line-height:44px;
+    text-indent: 37px;
+}
+.topic_text ul li:hover{background: #1693d4;}
+.topic_product{
+    position: absolute;
+    top: 80px;
+    left: 720px;
+    background: #0f1c35;
+    display: none;
+}
+.topic_programme{
+    position: absolute;
+    top: 80px;
+    left: 840px;
+    background: #0f1c35;
+    display: none;
+}
+.topic_programme .topic_text ul li:nth-child(1){
+    font-size: 20px;
+    height: 48;
+    line-height: 48px;
+    background: #122443;
+    text-indent: 25px; 
+}
+.topic_programme .topic_text ul li:first-child:hover{  background: #122443;}
+.topic_service{
+    position: absolute;
+    top: 80px;
+    left: 960px;
+    background: #0f1c35;
+    display: none;
+}
+.topic_aboutus{
+    position: absolute;
+    top: 80px;
+    left:1080px;
+    background: #0f1c35;
+    display: none;
+}
+.topic_aboutus .topic_text ul li:nth-child(1){
+    font-size: 20px;
+    height: 48;
+    line-height: 48px;
+    background: #122443;
+    text-indent: 25px;
+}
+.topic_aboutus .topic_text ul li:first-child:hover{  background: #122443;}
+
+
+
+
+
+.bottom{background-color: #1f2e33;font-size: 13px;text-align: center;}
+.bottom ul{display: inline-block;vertical-align: top;text-align: left;line-height: 30px;margin: 90px 80px 250px 80px;}
+.bottom li{color: #999;}
+.bottom ul li:hover,.bottom ul li:hover p{color:#ddd;cursor: default;}
+.bottom ul li:first-child{font-size: 16px;color: #fff;padding-bottom: 20px;}
+.bottom ul:last-child li{padding-left: 30px;color: #fff;opacity: 0.45;}
+.bottom ul:last-child li:first-child,.bottom ul:last-child li:hover{opacity: 1;}
+.bottom li p{color: #fff;}
+.bottom ul:last-child li:nth-child(2){background:url(../images/tele_icon_de.png) no-repeat left 4px; }
+.bottom ul:last-child li:nth-child(3){background:url(../images/mail_icon_de.png) no-repeat left 4px; }
+.bottom ul:last-child li:nth-child(4){background:url(../images/addr_icon_de.png) no-repeat left 4px; }
+.bottom ul:last-child li:nth-child(1){padding-left: 0;}
+.bottom_info{width: 1400px;height: 40px;padding-top: 20px;border-top: 1px solid rgba(255,255,255,.1);position: relative;top:490px;left: 50%;margin-left: -700px; }
+.bottom_info span{display: inline-block;float: left;color: #999;width: 50%;text-align: left;line-height: 20px;}
+.bottom_info span:last-child{float: right;text-align: right;}
+.bottom_info span b{display: inline-block;width: 20px;height: 20px;background:url(../images/beian.png) center center;margin: 0 4px; position: relative;top: 2px;}

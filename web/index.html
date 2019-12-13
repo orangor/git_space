@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/head.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <title>四川云聚泽联科技有限公司</title>
+</head>
+
+<body>
+    <div class="main_box" id="main_box">
+        <a href="#main_box">
+            <div class="to_top"> </div>
+        </a>
+        <div class="video">
+            <img src="images/head_bg.png">
+        </div>
+        <div class="bannerpng">
+        </div>
+        <div class="top" onmouseover="set_opacity(top_bg,1)" onmouseout="set_opacity(top_bg,0)">
+            <div class="top_bg" id="top_bg"> </div>
+            <div class="logo"><img src="images/logo2.png" /></div>
+
+            <ul class="nav">
+                <li><a class="cur" href="index.html">首页</a></li>
+                <li onmouseover="node_show(topic_product)" onmouseout="node_hide(topic_product)"><a
+                        href="product.html">产品</a></li>
+                <li onmouseover="node_show(topic_programme)" onmouseout="node_hide(topic_programme)"><a
+                        href="programme.html">方案</a></li>
+                <li><a href="service.html">服务</a></li>
+                <li><a href="aboutus.html">关于云泽</a></li>
+            </ul>
+            <div class="tele"><img src="images/dianhua.png" /> 028-8596-3638</div>
+
+            <a class="news" href="news.html">
+                <div class="news_title">人人必懂的AI与大数据：看明白这些才算真的了解</div>
+                <div class="news_content">2018年悄无声息地过去了，对互联网信息行业来说2018年是里程碑式的一年，因为有人说···</div>
+                <div class="news_date">——2019/06/20</div>
+            </a>
+
+        </div>
+        <div class="topic_product" id="topic_product" onmouseover="node_show(this),set_opacity(top_bg,1)"
+            onmouseout="node_hide(this),set_opacity(top_bg,0)">
+            <div class="topic_text" id="topic_text">
+                <ul>
+                    <li>
+                        <div class="circle"></div>可视化平台
+                    </li>
+                    <li>
+                        <div class="circle"></div>数据交换工具
+                    </li>
+                    <li>
+                        <div class="circle"></div>大数据平台
+                    </li>
+                    <li>
+                        <div class="circle"></div>智能服务平台
+                    </li>
+                    <li>
+                        <div class="circle"></div>决策分析平台
+                    </li>
+                    <li>
+                        <div class="circle"></div>自然语言处理
+                    </li>
+                    <li>
+                        <div class="circle"></div>知识图谱
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="topic_programme" id="topic_programme" onmouseover="node_show(this),set_opacity(top_bg,1)"
+            onmouseout="node_hide(this),set_opacity(top_bg,0)">
+            <div class="topic_text" id="topic_text">
+                <ul>
+                    <li>行业应用解决方案</li>
+                    <li>
+                        <div class="circle"></div>MoM中台
+                    </li>
+                    <li>
+                        <div class="circle"></div>MES系统
+                    </li>
+                    <li>
+                        <div class="circle"></div>制造大数据
+                    </li>
+                    <li>
+                        <div class="circle"></div>政务大数据
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        基础设施方案
+                    </li>
+                    <li>
+                        <div class="circle"></div>基础云计算
+                    </li>
+                    <li>
+                        <div class="circle"></div>数据储存
+                    </li>
+                    <li>
+                        <div class="circle"></div>数据安全
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="topic_service" id="topic_service" onmouseover="node_show(this),set_opacity(top_bg,1)"
+            onmouseout="node_hide(this),set_opacity(top_bg,0)">
+            <div class="topic_text" id="topic_text">
+                <ul>
+                    <li>
+                        <div class="circle"></div>业务咨询
+                    </li>
+                    <li>
+                        <div class="circle"></div>系统集成
+                    </li>
+                    <li>
+                        <div class="circle"></div>软件开发
+                    </li>
+                    <li>
+                        <div class="circle"></div>售后运维
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="topic_aboutus" id="topic_aboutus" onmouseover="node_show(this),set_opacity(top_bg,1)"
+            onmouseout="node_hide(this),set_opacity(top_bg,0)">
+            <div class="topic_text" id="topic_text">
+                <ul>
+                    <li>关于公司</li>
+                    <li>
+                        <div class="circle"></div>使命
+                    </li>
+                    <li>
+                        <div class="circle"></div>愿景
+                    </li>
+                    <li>
+                        <div class="circle"></div>价值观
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        招聘信息
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div class="page_teleport">
+            <div class="nav">
+                <div class="item1" onmouseover="skate_top(skate1)" onmouseout="skate_bottom(skate1)">
+                    <a href="#bc">
+                        <div class="skate" id="skate1">
+                            <div class="slider1">
+                                <div class="icon">
+                                    <img src="images/chat.png" alt="">
+                                </div>
+                                <div class="cha">业务咨询</div>
+                                <div class="us">(Business&nbsp;Consulting)</div>
+                            </div>
+                            <div class="slider2">
+                                <div><img src="images/line1.png" /> </div>
+                                <P><img src="images/icon1.png" />精益制造</P>
+                                <p><img src="images/icon2.png" />智能工厂</p>
+                                <p><img src="images/icon3.png" />运营管理</p>
+                                <div><img src="images/line1.png" /></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="item2" onmouseover="skate_top(skate2)" onmouseout="skate_bottom(skate2)">
+                    <a href="#ai">
+                        <div class="skate" id="skate2">
+                            <div class="slider1">
+                                <div class="icon">
+                                    <img src="images/address_list.png" alt="">
+                                </div>
+                                <div class="cha">人工智能</div>
+                                <div class="us">(Artificial&nbsp;Intelligence)</div>
+                            </div>
+
+
+                            <div class="slider2">
+                                <div><img src="images/line1.png" /> </div>
+                                <P><img src="images/icon1.png" />行业应用</P>
+                                <p><img src="images/icon2.png" />算法模型</p>
+                                <p><img src="images/icon3.png" />算力平台</p>
+                                <div><img src="images/line1.png" /></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="item3" onmouseover="skate_top(skate3)" onmouseout="skate_bottom(skate3)">
+                    <a href="#big_data">
+                        <div class="skate" id="skate3">
+                            <div class="slider1">
+                                <div class="icon">
+                                    <img src="images/zhidingfanwei.png" alt="">
+                                </div>
+                                <div class="cha">大数据</div>
+                                <div class="us">(Big&nbsp;Data)</div>
+                            </div>
+                            <div class="slider2">
+                                <div><img src="images/line1.png" /> </div>
+                                <P><img src="images/icon1.png" />可视化</P>
+                                <p><img src="images/icon2.png" />数据治理</p>
+                                <p><img src="images/icon3.png" />数据资产</p>
+                                <div><img src="images/line1.png" /></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="item4" onmouseover="skate_top(skate4)" onmouseout="skate_bottom(skate4)">
+                    <a href="#cloud">
+                        <div class="skate" id="skate4">
+
+                            <div class="slider1">
+                                <div class="icon">
+                                    <img src="images/wangpan.png" alt="">
+                                </div>
+                                <div class="cha">云计算</div>
+                                <div class="us">(Cloud)</div>
+                            </div>
+                            <div class="slider2">
+                                <div><img src="images/line1.png" /> </div>
+                                <P><img src="images/icon1.png" />建设规划</P>
+                                <p><img src="images/icon2.png" />私有云平台</p>
+                                <p><img src="images/icon3.png" />数据中心</p>
+                                <div><img src="images/line1.png" /></div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-bc" id="bc">
+            <div class="page_head">
+                <P class="title">业务咨询(BC)</P>
+                <div class="decorate"><img src="images/box_top_img.png" /></div>
+                <p class="explain">
+                    公司在工业制造领域深耕超过15年，公司咨询团队来自制造各细分领域的业务专家、精益制造专家、工厂运营管理专家组成。在工业制造领域有着丰富的行业知识储备和IT系统建设经验。在传统制造领域，一直引领客户走在前列，先后多个项目被评选为“国家级智能制造示范项目”。
+                    目前，中国约20%的汽车产能均由公司的系统及团队支撑。我们的系统也由单纯的MES、APS、LES、QMS等升级为MOM平台，为客户提供一个强大的运营管理平台，不断集成制造上下游相关业务、技术、工具和产品。
+                </p>
+            </div>
+            <div class="content">
+                <div class="picture2">
+                    <img src="images/bc.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="page-ai" id="ai">
+            <div class="page_head">
+                <P class="title">人工智能(AI)</P>
+                <div class="decorate"><img src="images/box_top_img.png" /></div>
+                <p class="explain">
+                    公司人工智能团队能为制造业客户提供工厂运营管理各环节的智能化建设规划方案，并指导客户分步实施落地。利用技术和工具，帮助客户完成管理智能、流程智能、排产智能、生产智能、监控智能、产品检测智能等一系列智能化建设。
+                    公司有专门的算法团队，并共享或拥有超过100项算法专利技术；公司不但可以提供模型训练的GPU运算设备和能力，也能为客户建设模型训练平台并指导运营。</p>
+            </div>
+            <div class="content">
+
+                <div class="nav">
+                    <div class="ai_progect"><img src="images/ai_project.png" /></div>
+                    <div class="ai_company"><img src="images/ai_company.png" /></div>
+                    <div class="ai_algorithm"><img src="images/ai_algorithm.png" /></div>
+                    <div class="ai_frame"><img src="images/ai_frame.png" /></div>
+                    <div class="ai_hardware"><img src="images/ai_hardware.png" /></div>
+                    <div class="ai_language"><img src="images/ai_language.png" /></div>
+                </div>
+
+                <div class="nav_cover">
+
+                    <div class="ai_progect"><img src="images/ai_project.png" /></div>
+                    <div class="ai_company"><img src="images/ai_company.png" /></div>
+                    <div class="ai_algorithm"><img src="images/ai_algorithm.png" /></div>
+                    <div class="ai_frame"><img src="images/ai_frame.png" /></div>
+                    <div class="ai_hardware"><img src="images/ai_hardware.png" /></div>
+                    <div class="ai_language"><img src="images/ai_language.png" /></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="page-bd" id="big_data">
+            <div class="page_head">
+                <P class="title">大数据(BigData)</P>
+                <div class="decorate"><img src="images/box_top_img.png" /></div>
+                <p class="explain">
+                    公司大数据产品及方案主要包括：大数据基础平台、数据交换、数据治理、数据资产、可视化。从技术架构上主要利用中台化思路，打造技术平台、数据中台、AI中台、业务中台等等。
+                    公司大数据技术在为工业制造客户运营管理平台（MOM）提供技术和数据支撑，打造个性化工业大数据平台，也为其他客户提供大数据技术、产品和方案，比如政府大数据、医疗大数据、教育大数据及各行业的可视化大屏等。
+
+                </p>
+            </div>
+            <div class="content">
+                <div class="picture">
+                    <img src="images/big_data.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="page_cloud" id="cloud">
+            <div class="page_head">
+                <P class="title">云计算(Cloud)</P>
+                <div class="decorate"><img src="images/box_top_img.png" /></div>
+                <p class="explain">
+                    公司云计算团队多数来自IBM、HP、Fujitsu、Inspur等国际国内大公司，在传统硬件和云计算建设领域具有丰富的建设能力和集成经验，能够为客户提供售前、售中、售后的全方位服务。
+                    我们的团队为客户提供私有云和混合云咨询、建设、维护服务，也为客户提供OPENSTACK开源云平台的技术支撑，还能为客户提供其他OSS相关的订阅服务。除此外，我也提供云计算硬件基础设施服务器、存储、网络等。
+                </p>
+            </div>
+            <div class="content">
+                <div class="nav" id="cloud_nav">
+                    <div class="item" onmouseover="touch_cloud_item(1,this)">
+                        <div class="icon"><img src="images/cloud_icon1.png" /></div>
+                        <p class="slogan">整合&虚拟化</p>
+                    </div>
+                    <div class="circle3"></div>
+                    <div class="circle3"></div>
+                    <div class="circle3"></div>
+                    <div class="item" onmouseover="touch_cloud_item(2)">
+                        <div class="icon"><img src="images/cloud_icon2.png" /></div>
+                        <p class="slogan">资源动态管理</p>
+                    </div>
+                    <div class="circle3"></div>
+                    <div class="circle3"></div>
+                    <div class="circle3"></div>
+                    <div class="item" onmouseover="touch_cloud_item(3)">
+                        <div class="icon"><img src="images/cloud_icon3.png" /></div>
+                        <p class="slogan">标准化</p>
+                    </div>
+                    <div class="circle3"></div>
+                    <div class="circle3"></div>
+                    <div class="circle3"></div>
+                    <div class="item" onmouseover="touch_cloud_item(4)">
+                        <div class="icon"><img src="images/cloud_icon4.png" /></div>
+                        <p class="slogan">自动化</p>
+                    </div>
+                </div>
+                <div class="text_nav" id="text_nav">
+                    <li>
+
+                        <div class="angle"> <img src="images/cloud_angle.png" /></div>
+
+                    </li>
+                    <li>
+                        <div class="angle"> <img src="images/cloud_angle.png" /></div>
+                    </li>
+                    <li>
+                        <div class="angle"> <img src="images/cloud_angle.png" /></div>
+                    </li>
+                    <li>
+                        <div class="angle"> <img src="images/cloud_angle.png" /></div>
+                    </li>
+                    <li>
+                        <div class="angle"> <img src="images/cloud_angle.png" /></div>
+                    </li>
+                    <li>
+                        <div class="angle"> <img src="images/cloud_angle.png" /></div>
+                    </li>
+                </div>
+
+            </div>
+            <div class="li_cover1"> </div>
+            <div class="li_cover2"></div>
+        </div>
+
+        <!-- 成功案例 -->
+        <div class="page_project">
+            <div class="title">
+                <img src="images/cgal.png">
+            </div>
+            <div class="content">
+                <div class="limit_box">
+                    <div class="nav" id="skate_project">
+                        <ul>
+                            <li>
+                                <div><img src="images/p1.png" /></div>
+                                <p>上汽集团</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p2.png" /></div>
+                                <p>丰田汽车</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p3.png" /></div>
+                                <p>长安汽车</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p4.png" /></div>
+                                <p>新杰克</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p5.png" /></div>
+                                <p>中航工业集团</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p6.png" /></div>
+                                <p>中国电子科技集团</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p7.png" /></div>
+                                <p>四川人社</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p8.png" /></div>
+                                <p>四川移动</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div><img src="images/p9.png" /></div>
+                                <p>川外成都学院</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p10.png" /></div>
+                                <p>四川师范大学</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p11.png" /></div>
+                                <p>西南石油大学</p>
+                            </li>
+                            <li>
+                                <div><img src="images/p12.png" /></div>
+                                <p>成都市第三人民医院</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="touch_club" id="touch_club">
+                        <div class="circle4" onclick="skate_project(this,0)"></div>
+                        <div class="circle5" onclick="skate_project(this,-1350)"></div>
+                    </div>
+
+                    <div class="left_bt" onclick="skate_project2(1)"> <img src="images/left_bt.png" /> </div>
+                    <div class="right_bt" onclick="skate_project2(-1)"> <img src="images/right_bt.png" /> </div>
+                </div>
+            </div>
+        </div>
+        <div class="page_partners">
+            <div class="content">
+                <div class="partners_title"> <img src="images/hzhp_png.png"></div>
+                <div class="nav">
+                    <div><img src="images/comp1.png" /></div>
+                    <div><img src="images/comp2.png" /></div>
+                    <div><img src="images/comp3.png" /></div>
+                    <div><img src="images/comp4.png" /></div>
+                    <div><img src="images/comp5.png" /></div>
+                    <div><img src="images/comp6.png" /></div>
+                    <div><img src="images/comp7.png" /></div>
+                    <div><img src="images/comp8.png" /></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 公司信息 -->
+        <div class="company">
+            <img src="images/gsxx_png.png">
+            <div class="p_content " id="dituContent">
+            </div>
+            <ul class="info">
+                <li class="title">四川云聚泽联科技有限公司</li>
+                <li class="tele">028-8596-3638</li>
+                <li class="mail">hr@cf-sc.com</li>
+                <li class="addr">
+                    <p>四川省成都市武侯区蜀锦路88号<br>楚峰国际中心1406</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部信息 -->
+        <div class="bottom">
+
+            <div class="bottom_info">
+                <span>Copyright © 2018-2019 C&F Tech. All rights reserved.</span>
+                <span>蜀ICP备<b></b>蜀ICP备19008208号</span>
+            </div>
+            <div class="text">
+                <ul>
+                    <li>产品</li>
+                    <li>智能情况分析系统</li>
+                    <li>大数据组件可视化系统</li>
+                    <li>智能业务服务系统</li>
+                </ul>
+
+                <ul>
+                    <li>通用解决方案</li>
+                    <li>系统集成服务</li>
+                    <li>大数据服务</li>
+                    <li>数据库应用服务</li>
+                    <li>可视化系统</li>
+                </ul>
+
+                <ul>
+                    <li>行业解决方案</li>
+                    <li>国防军工</li>
+                    <li>科技创新</li>
+                    <li>金融投资</li>
+                </ul>
+
+                <ul>
+                    <li>其他</li>
+                    <li>云聚相关</li>
+                    <li>行业最新资讯</li>
+                    <li>加入我们</li>
+                </ul>
+
+                <ul>
+                    <li>联系我们</li>
+                    <li class="tele">028-8596-3638</li>
+                    <li class="mail">hr@cf-sc.com</li>
+                    <li class="addr">
+                        <p>四川省成都市武侯区蜀锦路88号<br>楚峰国际中心1406</p>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(104.070091, 30.584569);//定义一个中心点坐标
+        map.centerAndZoom(point, 17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{ title: "四川云泽聚联科技有限公司", content: "楚峰国际1406", point: "104.070028|30.584662", isOpen: 0, icon: { w: 21, h: 21, l: 0, t: 0, x: 6, lb: 5 } }
+    ];
+    //创建marker
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, { icon: iconImg });
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, { "offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20) });
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json) {
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), { imageOffset: new BMap.Size(-json.l, -json.t), infoWindowOffset: new BMap.Size(json.lb + 5, 1), offset: new BMap.Size(json.x, json.h) })
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+
+</html>
