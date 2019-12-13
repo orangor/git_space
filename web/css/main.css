@@ -63,14 +63,14 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
  */
 a{text-decoration:none}
 *{box-sizing: border-box;transition: all .25s ease;color: #fff;}
-
+/*
 .main_box{
     width:100% ;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    
 }
-
+*/
 .bannerpng{
     position: absolute;
     width: 50%;
