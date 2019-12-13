@@ -13,7 +13,7 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
     top:22px;
     left: 25px;
 }
-
+li{   list-style-type: none;}
 .to_top {
     width: 4rem;
     height: 4rem;
@@ -26,68 +26,68 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
 .to_top:hover{
     background: url(../images/to_top2.png);
 }
-.video{height: 660px;width: 100%;overflow: hidden;position: relative;}
 
-.top{
-  
-    position: absolute;
+
+.top_box{
+    height: 660px;
     width: 100%;
-    height: 80px;
-    display: block;
-    top: 0px;
+    overflow: hidden;
+    position: relative;
+    background:url('../images/head_bg.png') no-repeat;
+    background-size: contain;
 }
 
-.top .top_bg{
-    background:url(../images/top_bg.png) repeat-x;
+.top_box .topBaner{
     width: 100%;
     height: 80px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
     transition: all 3s ease;
-    
-}
-
-.top .logo{
-    position: relative;
-    float: left;
-    top: 17px;
-    left:  250px;
-}
-
-.top .nav{
-    position: relative;
-    left: 680px;
-}
-
-.top .nav li {
     position: absolute;
-    list-style: none;
-    width: 120px;
-    display: block; 
+    margin: auto;
+background: rgba(255, 255, 255, 0);
+}
+
+.top_box .topBaner:hover{
+    background: rgba(13, 90, 204, 1); 
+}
+
+.top_box .topBaner .logo{ 
+    background: url(../images/logo2.png) no-repeat;
+    background-size: contain;
+    left:13% ;
+    height:45px;
+    top: 15px; 
+    width:  10%;
+    margin: auto;
+    float: left;
+    position:absolute;
+ }
+
+.top_box .topBaner .nav{ 
+    width: 600px;
+    height: 80px;
+    margin: auto;
+}
+
+.top_box .topBaner .nav li{
+    width: 20%;
     float: left;
     line-height: 80px;
-    background: #1693d4; 
 }
-.top .nav li:nth-child(1){ left: 0px;   }
-.top .nav li:nth-child(2){ left: 120px; }
-.top .nav li:nth-child(3){ left: 240px;}
-.top .nav li:nth-child(4){ left: 360px; }
-.top .nav li:nth-child(5){ left: 480px; }
-.top .nav li a{
+
+.top_box .topBaner .tele{ 
+    background: url(../images/dianhua.png) no-repeat;
+    line-height: 20px;
+    padding-left:30px ;
+    width:10%;
+    right:  13%;
+    top: 25px;
     position: absolute;
+}
+
+.top_box .topBaner  .nav li a{
     text-decoration:none;
     font-size:20px;  font-family: Microsoft YaHei;text-align: center;
     color: white;
-}
-.top .nav li a:after{content: normal;transition: all .35s ease;}
-.top .nav  li a:hover:after, .top .nav li a.cur:after{content: "";display: block;opacity:0.8;width: 100%;height: 4px;background: #fff;position: absolute;top: 70px;left: 0;cursor: pointer;}
-.top .nav li a:hover:after{opacity: 0.2;}
-.top .tele{
-    position: absolute;
-    top: 25px;  
-    right: 250px;
 }
 
 

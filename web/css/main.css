@@ -10,6 +10,7 @@
     position: relative;
     top:100px;
     margin: 10px;
+   
 }
 
 .circle3{
@@ -44,43 +45,27 @@
     margin-left: 25px;
 }
 
-/*
- body{
-     
-    min-height: 100%;
-    background: #f4f8ff;
-    border: 0;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
- */
 a{text-decoration:none}
 *{box-sizing: border-box;transition: all .25s ease;color: #fff;}
 
 .main_box{
     width:100% ;
     margin: 0 auto;
-    position: relative;
-    
+    background: #f4f8ff;;
+  
 }
 
 .bannerpng{
-    position: absolute;
+   margin: auto;
     width: 50%;
-    height: 342px;
-    left: 469px;
-    top: 200px;
+    height: 580px;
 }
-
 
 .top .news{ position: absolute; height: 40px;top:540px;line-height: 40px;display: block;left: 0px; width: 1400px;width:500px ;}
 .top .news div{float: left;font-size: 14px;margin-right: 30px;cursor: pointer;opacity: .5;}
 .top .news div.news_title{text-indent: 25px;opacity:1;background: url(../images/news_icon.png) no-repeat left 8px;}
 .top .news:hover div{opacity: 1;}
 .top .news .news_date{float: right;margin-right: 0;}
-
-
-
 
 .skate{
     position: relative;
@@ -152,15 +137,17 @@ a{text-decoration:none}
 }
 
 .page_teleport{
-    position: relative;
+   
+    width: 100%;
+    height: 600px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 .page_teleport .nav{
-    position: relative;
-    left:360px;
+    margin: auto;
     width: 1205px;
     height: 305px;
+
 }
 .page_teleport .nav  .item1{
     position: relative;
@@ -208,11 +195,9 @@ a{text-decoration:none}
 
 
 .page_head{
-    position: relative;
-    
+    margin: auto;
    padding-bottom: 40px;
    width: 990px;
-   left: 481px;
 }
 .page_head .title{
      color: black; 
@@ -243,25 +228,24 @@ a{text-decoration:none}
 
 
 .page-bc{
-    position: relative;
+    width: 100%;
+    height: 1200px;
     padding-top: 100px;
     padding-bottom: 100px;
+    
     background: #fff;
  }
  .page-bc .content{
-     position: relative;
+  margin: auto;
      width: 990px;
      height: 720px;
-     left: 481px;
      background:#f4f8ff ;
     
  } 
 
 .page-bc .content .picture2{
-    position: absolute;
     width: 990px;
     height: 720px;
-    right: 0px;
 }
 .page-bc .content  .picture2 img{
     width: 100%;
@@ -270,15 +254,16 @@ a{text-decoration:none}
 
 
 .page-ai{
-    position: relative;
+   margin: auto;
+   height: 1200px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .page-ai  .content{
     position: relative;
-    left: 481px;
+    left: 450px;
     width: 990px;
-    width: 700px;
+    height: 700px;
 }
 .page-ai  .content .nav{
     position: relative;
@@ -361,19 +346,19 @@ a{text-decoration:none}
  
 
  .page-bd{
-    position: relative;
+ margin: auto;
+   height: 1200px;
     padding-top: 100px;
     padding-bottom: 100px;
     background: #fff;
  }
 .page-bd .content{
-    position: relative;
+    margin: auto;
     width:990px;
     height: 700px;
-    left: 481px;
 }
 .page-bd .content .picture{
-    position: relative;
+   margin: auto;
     width: 990px;
     height: 700px;
 }
@@ -385,24 +370,21 @@ a{text-decoration:none}
 
 
 .page_cloud{
-    position: relative;
- 
   padding-top: 100px;
   padding-bottom: 100px;
   background: url(../images/cloud_bg.png);
+  overflow: hidden;
+  margin: auto;
 }
 .page_cloud .content{
-    position: relative;
+    margin: auto;
     width:1300px;
     height: 600px;
-    left: 300px;
-    
 }
 .page_cloud .content .nav{
-    position: relative;
+    margin: auto;
     width: 1100px;
     height: 300px;
-    left: 100px;
 }
 .page_cloud .content .nav .item{
     margin: 20px;
@@ -448,6 +430,7 @@ a{text-decoration:none}
     height: 132px;
     left: -340px;
     transition: all 1s ease;
+
 }
 .page_cloud .content  .text_nav li{
     color: black;
@@ -511,6 +494,7 @@ left: 252px;
     top: -10px;
     left: 346px;
     }
+ 
 .page_cloud  .li_cover1{
     position: absolute;
     left: 0px;
@@ -557,6 +541,7 @@ left: 252px;
    padding-top:100px;
    padding-bottom: 130px;
     text-align: center;
+    overflow: hidden;
   
 }
 .page_project .title{
@@ -577,7 +562,7 @@ left: 252px;
     position: relative;
     width: 1310px;
     height: 464px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 .page_project .content .limit_box .nav{
     position: relative;
@@ -647,6 +632,7 @@ left: 252px;
     padding-top:150px ;
     padding-bottom:100px ;
     text-align: center;
+    overflow: hidden;
 }
 
 .page_partners .content{

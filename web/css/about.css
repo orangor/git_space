@@ -10,11 +10,16 @@
     padding: 80px;
     padding-top: 60px;
     padding-bottom: 120px;
+
+    
     
 }
 li{  list-style-type: none;}
 .aboutus_box a{cursor: pointer;}
-.aboutus_page .aboutus_box:after{content: "";display: none;}
+.aboutus_page .aboutus_box:after{
+    content: "";
+    display: none;
+}
 .aboutus_box .list_box{width: 100%;text-align: center;border-bottom: 4px solid #eee;padding-bottom: 10px;}
 .aboutus_box .list_box li{display: inline-block;margin: 0 20px;  list-style-type: none;}
 .aboutus_box .list_box li a{display: block;color: #333;font-size: 16px;}
